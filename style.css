@@ -1,0 +1,10 @@
+.mail-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0px 0px 20px black;
+    background-color:  blue;
+    border-radius: 6px;
+    margin-bottom: 20px
+}
