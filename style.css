@@ -25,9 +25,10 @@
     resize: vertical;
 }
 
-.mailform button {
+button[class="mailform-button"] {
     margin:0 auto;
-    display:block;
+    width: 100%;
+    display: block;
     background-color: #8AC4FF;
     border: none;
     color: black;
@@ -35,8 +36,10 @@
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 16px;
+    border-radius: 8px;
+    margin-top: 5px;
+    padding: 2.5%
 }
-    .mailform button:hover {
+    button[class="mailform-button"]:hover {
         color: white;
     }
