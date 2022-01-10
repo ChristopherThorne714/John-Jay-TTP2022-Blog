@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang= "en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="mailform.js"></script>
+    <title>Contact Page</title>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <h1>Contact Us</h1>
+    <!--Mail Form-->
+    <div class="mail-container">
+        <form class="contact-form" action="https://formspree.io/f/mpzbwgdk" method="post">
+            <div class="mailform">
+                <label>Full Name:<input type="text" name="name" class="name" placeholder="Full name" required /></label>
+            </div>
+            <div class="mailform">
+                <label>Email address:<input type="text" name="mail" class="email" placeholder="youremail@email.com" required /></label>
+            </div>
+            <div class="mailform">
+                <label>Subject:<input type="text" name="subject" class="subject" placeholder="Subject" /></label>
+            </div>
+            <div class="mailform">
+                <label>Message:<textarea name="message" class="message" placeholder="Message" required></textarea></label>
+            </div>
+                <label><button type="submit" class="mailform-button" name="submit">SEND</button></label>
+        </form>
+    </div>
+    <div class="status">
+
+    </div>
+
+
+
+
+</body>
+
+</html> 
