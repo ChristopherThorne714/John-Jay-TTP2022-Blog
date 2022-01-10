@@ -37,3 +37,6 @@
     cursor: pointer;
     border-radius: 16px;
 }
+    .mailform button:hover {
+        color: white;
+    }
