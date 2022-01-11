@@ -11,13 +11,13 @@
 
 <body>
     <!--Navigation bar-->
-    <div class="mailHeading">
-    <h1>HAVE SOME QUESTIONS?</h1>
-    </div>
+    <h1>Contact Us</h1>
     <!--Mail Form-->
     <div class="mail-container">
+        <!--Using formspree, an email service to help us retrieve info once user submits the form.-->
         <form class="contact-form" action="https://formspree.io/f/mpzbwgdk" method="post">
             <div class="mailform">
+                <!-- creating multiple cells for user to enter inputs -->
                 <label>Full Name:<input type="text" name="name" class="name" placeholder="Full name" required /></label>
             </div>
             <div class="mailform">
@@ -28,8 +28,9 @@
             </div>
             <div class="mailform">
                 <label>Message:<textarea name="message" class="message" placeholder="Message" required></textarea></label>
-            </div>
-                <label><button type="submit" class="mailform-button" name="submit">SEND</button></label>
+            </div
+                <label><button type="submit" class="mailform-button" name="submit">SEND</button></label> 
+                <!--creating a button called Send--> 
         </form>
     </div>
     <div class="status">
