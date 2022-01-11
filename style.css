@@ -1,4 +1,10 @@
 /*CSS*/
+.mailHeading {
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%
+}
+
 .mail-container {
     width: 90%;
     max-width: 500px;
