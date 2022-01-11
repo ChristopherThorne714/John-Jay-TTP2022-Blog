@@ -1,11 +1,12 @@
 /*
 Author: Amy A
 */
+/* design the font of the body*/
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
-
+/* the size of the html page*/
 html {
   box-sizing: border-box;
 }
@@ -13,7 +14,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+/* the layout of the card*/
 .column {
   float: left;
   width: 33.3%;
@@ -29,28 +30,30 @@ Card for each team member
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
 }
-
+/* the design of the about-section*/
 .about-section {
   padding: 50px;
   text-align: center;
   background-color: #5d34a5;
   color: white;
 }
-
+/* the padding fo each container*/
 .container {
   padding: 0 16px;
 }
-
+/* the display for each container */
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
+/* the color of the tilte */
 .title {
   color: grey;
 }
 
+/* the design of the button */
 .button {
   border: none;
   outline: 0;
@@ -62,11 +65,11 @@ Card for each team member
   cursor: pointer;
   width: 100%;
 }
-
+/* the button background */
 .button:hover {
   background-color: #555;
 }
-
+/* the media icons display */ 
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
