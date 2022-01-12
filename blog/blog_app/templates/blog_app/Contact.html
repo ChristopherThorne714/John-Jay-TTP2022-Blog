@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-
+{% load static %}
 <html lang= "en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script src="mailform.js"></script>
+    <script src="{% static 'mailform.js'%}"></script>
     <title>Contact Page</title>
 </head>
 
