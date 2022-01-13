@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;    /* This sets primary and secondary fonts. It also sets the primary colors in the page. This way the color numbers and fonts do not have to rentered over again. */
+    --ff-secondary: 'Source Code Pro', monospace;
+    --clr-light: #333;
+    --clr-dark: #fff;
+    --clr-accent: #07c900;
+    --fs-h1: 3rem;
+
+    
+}
+
+@media (min-width: 800px) {      /* This adjusts the sizing of the subtitile and h1 */
+    :root {
+        --fs-h1: 4.8rem;
+        --fs-body: 1.555rem;
+    }
+}
+
+/* General styles */
+
+
+body {
+    background: var(--clr-light);   /* Adjusts the the color used in the text and the color used in the background */
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section {     /* Adjusts the spacing between top, bottom, left, and right */
+    padding: 13em 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Typography */
+
+h1 { font-size: var(--fs-h1) }
+
+.section__subtitle {   /* This adjusts the fonts, Spacing of the subtitle */
+    background: var(--clr-accent);
+    padding: .25em .9em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+
+.typewriter h1 {      /* The code was derived from https://css-tricks.com/snippets/css/typewriter-effect/ */ 
+    overflow: hidden; /* This makes sure that all the lettets are not revealed until the animation is over  */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* This makes sure that everything is on the same line */
+    margin: 0 auto; /* This that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* This adusts the spacing between the letters */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* This animation simply chanages an element’s width from 0 to 100%. */  
+  @keyframes typing {  
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+/*  Intro section/ Landing Page  */
+
+.intro {
+    position: relative;  /*  An element with position: relative; is positioned relative to its normal position.S etting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position  */
+}
+
+.intro__img {
+    box-shadow: var(--bs);  /*The box-shadow property in CSS is for putting shadows on elements */
+}
+
+.section__subtitle {
+    display: inline-block;
+}
+
+@media (min-width: 600px) {                            
+    .intro {                     /*Used grid to place the elements into place  */
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    
+    .intro__img {                  /*Used grid to further fix the placement of the intro image  */
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }    
+    
+    .section__subtitle{       /*Used gto further position the substitle */
+        align-self: start;
+        grid-column: -1 / 1;  /* Makes the subtitle stretch all they way across  */
+        grid-row: 2;
+        text-align: right;   /* Makes text in subtitle allign to the right  */
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
+    
+}
