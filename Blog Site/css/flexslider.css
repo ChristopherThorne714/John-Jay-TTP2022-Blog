@@ -14,9 +14,7 @@
 .flex-pauseplay span {
   text-transform: capitalize;
 }
-/* ====================================================================================================================
- * BASE STYLES
- * ====================================================================================================================*/
+
 .flexslider {
   margin: 0;
   padding: 0;
@@ -30,7 +28,7 @@
   display: block;
 }
 .flexslider .slides:after {
-  /*content: "\0020";*/
+ 
   display: block;
   clear: both;
   visibility: hidden;
@@ -46,9 +44,7 @@ html[xmlns] .flexslider .slides {
 .no-js .flexslider .slides > li:first-child {
   display: block;
 }
-/* ====================================================================================================================
- * DEFAULT THEME
- * ====================================================================================================================*/
+
 .flexslider {
   margin: 0 0 60px;
   background: #ffffff;
