@@ -1,0 +1,56 @@
+/*CSS*/
+.mailHeading {
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%
+}
+
+.mail-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px black;
+    background-color: lightblue;
+    border-radius: 8px;
+    margin-bottom: 20px
+}
+
+/*CSS for each entry option*/
+.mailform {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/*CSS for when the boxes for texts */
+.mailform input,
+.mailform textarea {
+    width: 95%;
+    padding: 2.5%;
+    font-size: 18px;
+    border:1px solid black;
+    margin-top: 5px;
+    resize: vertical;
+}
+
+/*CSS for the button */
+button[class="mailform-button"] {
+    margin:0 auto;
+    width: 100%;
+    display: block;
+    background-color: #8AC4FF;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 5px;
+    padding: 2.5%
+}
+/*CSS for when hovering the button */
+    button[class="mailform-button"]:hover {
+        color: white;
+    }
