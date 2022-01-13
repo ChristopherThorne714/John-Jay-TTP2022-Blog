@@ -1,11 +1,27 @@
 /*CSS*/
+
+:root {
+  --ff-primary: 'Source Sans Pro', sans-serif;    /* This sets primary and secondary fonts. It also sets the primary colors in the page. This way the color numbers and fonts do not have to rentered over again. */
+  --ff-secondary: 'Source Code Pro', monospace;
+  --clr-light: #333;
+  --clr-dark: #fff;
+  --clr-accent: #07c900;
+  --fs-h1: 3rem;
+}
+
+.mailHeading {
+  text-align: center;
+  margin-top: 5%;
+  color: #fff;
+}
+
 .mail-container {
     width: 90%;
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0px 0px 20px black;
-    background-color: lightblue;
+    background-color: #07c900;
     border-radius: 8px;
     margin-bottom: 20px
 }
@@ -30,23 +46,21 @@
 
 /*CSS for the button */
 button[class="mailform-button"] {
-    margin:0 auto;
-    width: 100%;
+    width: 95%;
     display: block;
-    background-color: #8AC4FF;
+    background-color: #0aa004;
     border: none;
-    color: black;
+    color: #fff;;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
     border-radius: 8px;
-    margin-top: 5px;
-    padding: 2.5%
+    margin-top: 10px;
 }
 /*CSS for when hovering the button */
     button[class="mailform-button"]:hover {
-        color: white;
+        color: black;
     }
 /*
 Author: Amy A
@@ -55,6 +69,7 @@ Author: Amy A
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: #333;
   }
   /* the size of the html page*/
   html {
