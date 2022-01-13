@@ -44,6 +44,9 @@ Card for each team member
   box-shadow: 0px 0px 20px black;
   margin: 8px;
 }
+.img {
+  border-radius: 25%;
+}
 /* the design of the about-section*/
 .about-section {
   padding: 50px;
