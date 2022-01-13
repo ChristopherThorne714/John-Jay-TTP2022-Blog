@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-#from blog import blog_app
 from blog_app import views
 from django.conf.urls.static import static
 from django.conf import settings
@@ -26,7 +25,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('all_blogs/', views.all_blogs, name='all_blogs'),
     path('about/', views.about, name='about'),
-    path('contact', views.contact, name='contact'),
+    #path('contact', views.contact, name='contact'),
     path('admin/', admin.site.urls),
     path('blog_app/', include('blog_app.urls')),
 ]
