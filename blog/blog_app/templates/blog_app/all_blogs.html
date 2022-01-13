@@ -1,0 +1,25 @@
+
+{% extends 'blog_app/base.html' %}
+{% block content %}
+
+<h1>Blogs</h1>
+
+<h2> I have written {{ blogs.count }} blog{{ blogs.count|pluralize }} </h2>
+
+{% for blog in blogs %}
+<!--I don't know why this image is not displaying properly, might have to scrap this part.-->
+{% if blog.url %}
+<a href="{{ blog.url }}">
+  <img src="{{ blog.image.url }}" class="img-fluid mb-2">
+</a>
+{% else %}
+
+<img src="{{ blog.image.url }}" class="img-fluid mb-2">
+{% endif %}
+    <a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
+    <h5>{{ blog.date|date:'M d Y' }}</h5>
+    <p>{{ blog.description|striptags|truncatechars:100 }}</p>
+    
+{% endfor %}
+
+{% endblock %}

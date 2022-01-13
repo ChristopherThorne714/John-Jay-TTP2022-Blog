@@ -1,0 +1,29 @@
+<!--might have to change this file path-->
+{% extends 'blog_app/base.html' %}
+
+{% block content %}
+
+
+
+
+<br>
+
+<h1>{{ blog.title }}</h1>
+<!--I don't know why this image is not displaying properly, might have to scrap this part.-->
+{% if project.url %}
+<a href="{{ blog.url }}">
+  <img src="{{ blog.image.url }}" class="img-fluid mb-2">
+</a>
+{% else %}
+
+<img src="{{ blog.image.url }}" class="img-fluid mb-2">
+{% endif %}
+    <a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
+
+
+<h2>--- {{ blog.date|date:'F jS Y' }} ---</h2>
+
+{{ blog.description|safe }}
+
+
+{% endblock %}
