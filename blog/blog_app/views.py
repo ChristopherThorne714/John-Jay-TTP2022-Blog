@@ -3,8 +3,8 @@ from django.http import HttpResponse
 from .models import Blog
 # Create your views here.
 
-def base(request):
-    return render(request, 'blog_app/base.html')
+def home(request):
+    return render(request, 'blog_app/home.html')
 def contact(request):
     return render(request, 'blog_app/contact.html')
 def about(request):

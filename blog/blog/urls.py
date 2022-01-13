@@ -23,7 +23,7 @@ from django.conf import settings
 app_name = 'blog'
 
 urlpatterns = [
-    path('', views.base, name='base'),
+    path('', views.home, name='home'),
     path('all_blogs/', views.all_blogs, name='all_blogs'),
     path('about/', views.about, name='about'),
     path('contact', views.contact, name='contact'),
