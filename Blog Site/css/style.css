@@ -14,7 +14,11 @@ body {
   line-height: 1.7;
   color: #ffffff;
 }
+<<<<<<< Updated upstream
+/*page color */
+=======
 
+>>>>>>> Stashed changes
 #page {
   position: relative;
   overflow-x: hidden;
@@ -25,6 +29,10 @@ body {
   transition: 0.5s;
   background:#3d3b3b
 }
+<<<<<<< Updated upstream
+/*back of page control */
+=======
+>>>>>>> Stashed changes
 .offcanvas #page {
   overflow: hidden;
   position: absolute;
@@ -56,6 +64,10 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
+<<<<<<< Updated upstream
+/*text size */
+=======
+>>>>>>> Stashed changes
 p {
   margin-bottom: 20px;
   font-size: 18px;
@@ -217,6 +229,10 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+<<<<<<< Updated upstream
+  
+=======
+>>>>>>> Stashed changes
 }
 .fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
   color: black;
@@ -309,6 +325,10 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li.active > a {
   color: rgb(255, 255, 255) !important;
   position: relative;
+<<<<<<< Updated upstream
+  
+=======
+>>>>>>> Stashed changes
 }
 .fh5co-nav ul li.active > a:before {
   position: absolute;
@@ -1242,6 +1262,8 @@ h1, h2, h3, h4, h5, h6, figure {
     display: block;
   }
 }
+<<<<<<< Updated upstream
+=======
 
 .btn {
   margin-right: 4px;
@@ -1403,6 +1425,7 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 1;
 }
 
+>>>>>>> Stashed changes
 .form-control {
   box-shadow: none;
   background: transparent;

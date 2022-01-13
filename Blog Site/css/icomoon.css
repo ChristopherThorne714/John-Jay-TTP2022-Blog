@@ -19,7 +19,11 @@
   text-transform: none;
   line-height: 1;
 
+<<<<<<< Updated upstream
+  /* Better Font Rendering */
+=======
   /* Better Font Rendering =========== */
+>>>>>>> Stashed changes
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

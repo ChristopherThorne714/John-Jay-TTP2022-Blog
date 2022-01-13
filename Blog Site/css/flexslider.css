@@ -14,9 +14,13 @@
 .flex-pauseplay span {
   text-transform: capitalize;
 }
+<<<<<<< Updated upstream
+
+=======
 /* ====================================================================================================================
  * BASE STYLES
  * ====================================================================================================================*/
+>>>>>>> Stashed changes
 .flexslider {
   margin: 0;
   padding: 0;
@@ -30,7 +34,11 @@
   display: block;
 }
 .flexslider .slides:after {
+<<<<<<< Updated upstream
+ 
+=======
   /*content: "\0020";*/
+>>>>>>> Stashed changes
   display: block;
   clear: both;
   visibility: hidden;
@@ -46,9 +54,13 @@ html[xmlns] .flexslider .slides {
 .no-js .flexslider .slides > li:first-child {
   display: block;
 }
+<<<<<<< Updated upstream
+
+=======
 /* ====================================================================================================================
  * DEFAULT THEME
  * ====================================================================================================================*/
+>>>>>>> Stashed changes
 .flexslider {
   margin: 0 0 60px;
   background: #ffffff;
