@@ -6,6 +6,7 @@ Author: Amy A
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  
 }
 /* the size of the html page*/
 html {
@@ -14,6 +15,7 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+  color: #000;
 }
 /* the layout of the card*/
 .column {
@@ -21,6 +23,7 @@ html {
   width: 33.3%;
   margin-bottom: 16px;
   padding: 0 8px;
+  
 }
 
 /*
@@ -35,8 +38,8 @@ Card for each team member
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #5d34a5;
-  color: white;
+  background-color: #07c900;
+  color: #fff;
 }
 /* the padding fo each container*/
 .container {
@@ -88,6 +91,7 @@ font-size: 30px;
 width: 30px;
 text-align: center;
 text-decoration: none;
+color: #555;
 border-radius: 50%;
 }
 
@@ -101,5 +105,6 @@ font-size: 30px;
 width: 30px;
 text-align: center;
 text-decoration: none;
+color: #555;
 border-radius: 50%;
 }
