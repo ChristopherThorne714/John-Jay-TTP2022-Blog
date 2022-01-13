@@ -6,7 +6,7 @@
   Links to online sources for icons -->
 <script src="https://kit.fontawesome.com/748e0c1f07.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<script src="{% static 'mailform.js'%}"></script>
 <link rel="stylesheet" type="text/css" href="{% static  'styles.css' %}">
 <head>
   <!-- Author: Amy D
@@ -268,6 +268,33 @@
       </div>
     </div>
   </div>
+
+  <!--ADDED CONTACT TO BOTTOM TO SEE IF IT WORKS WELL-->
+<!--Navigation bar-->
+<div class="mailHeading">
+  <h1>HAVE SOME QUESTIONS?</h1>
+  </div>
+  <!--Mail Form-->
+  <div class="mail-container">
+      <form class="contact-form" action="https://formspree.io/f/mpzbwgdk" method="post">
+          <div class="mailform">
+              <label>Full Name:<input type="text" name="name" class="name" placeholder="Full name" required /></label>
+          </div>
+          <div class="mailform">
+              <label>Email address:<input type="text" name="mail" class="email" placeholder="youremail@email.com" required /></label>
+          </div>
+          <div class="mailform">
+              <label>Subject:<input type="text" name="subject" class="subject" placeholder="Subject" /></label>
+          </div>
+          <div class="mailform">
+              <label>Message:<textarea name="message" class="message" placeholder="Message" required></textarea></label>
+          </div>
+              <label><button type="submit" class="mailform-button" name="submit">SEND</button></label>
+      </form>
+  </div>
+  <div class="status">
+  </div>
+
 
 </body>
 
