@@ -5,8 +5,6 @@ from .models import Blog
 
 def home(request):
     return render(request, 'blog_app/home.html')
-def contact(request):
-    return render(request, 'blog_app/contact.html')
 def about(request):
     return render(request, 'blog_app/about.html')
 
