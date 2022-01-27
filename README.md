@@ -1,2 +1,3 @@
 # John-Jay-TTP2022-Blog
-# Jonathan's Branch
+
+We blogged about our experiences in the TTP program during Winter 2022.
